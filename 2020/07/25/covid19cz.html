@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Covid 19 statistics | Covid19 Czech Republic</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Covid 19 statistics" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Jupyter notebooks based on data from MZCR." />
+<meta property="og:description" content="Jupyter notebooks based on data from MZCR." />
+<link rel="canonical" href="https://rocksteady1101.github.io/covid19/2020/07/25/covid19cz.html" />
+<meta property="og:url" content="https://rocksteady1101.github.io/covid19/2020/07/25/covid19cz.html" />
+<meta property="og:site_name" content="Covid19 Czech Republic" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-07-25T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"Jupyter notebooks based on data from MZCR.","@type":"BlogPosting","headline":"Covid 19 statistics","dateModified":"2020-07-25T00:00:00-05:00","datePublished":"2020-07-25T00:00:00-05:00","url":"https://rocksteady1101.github.io/covid19/2020/07/25/covid19cz.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://rocksteady1101.github.io/covid19/2020/07/25/covid19cz.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/covid19/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rocksteady1101.github.io/covid19/feed.xml" title="Covid19 Czech Republic" /><link rel="shortcut icon" type="image/x-icon" href="/covid19/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Covid 19 statistics | Covid19 Czech Republic</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Covid 19 statistics" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Jupyter notebooks based on data from MZCR." />
+<meta property="og:description" content="Jupyter notebooks based on data from MZCR." />
+<link rel="canonical" href="https://rocksteady1101.github.io/covid19/2020/07/25/covid19cz.html" />
+<meta property="og:url" content="https://rocksteady1101.github.io/covid19/2020/07/25/covid19cz.html" />
+<meta property="og:site_name" content="Covid19 Czech Republic" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-07-25T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"Jupyter notebooks based on data from MZCR.","@type":"BlogPosting","headline":"Covid 19 statistics","dateModified":"2020-07-25T00:00:00-05:00","datePublished":"2020-07-25T00:00:00-05:00","url":"https://rocksteady1101.github.io/covid19/2020/07/25/covid19cz.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://rocksteady1101.github.io/covid19/2020/07/25/covid19cz.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://rocksteady1101.github.io/covid19/feed.xml" title="Covid19 Czech Republic" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/covid19/">Covid19 Czech Republic</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/covid19/about/">About Me</a><a class="page-link" href="/covid19/search/">Search</a><a class="page-link" href="/covid19/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Covid 19 statistics</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-07-25T00:00:00-05:00" itemprop="datePublished">
+        Jul 25, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/Rocksteady1101/covid19/tree/master/_notebooks/covid19cz.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/covid19/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/Rocksteady1101/covid19/master?filepath=_notebooks%2Fcovid19cz.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/covid19/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/Rocksteady1101/covid19/blob/master/_notebooks/covid19cz.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/covid19/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/covid19cz.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">import</span> <span class="nn">datetime</span> <span class="k">as</span> <span class="nn">dt</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/osoby.csv&quot;</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">content</span>
+<span class="c1"># parse_dates = [0], index_col = 0</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">StringIO</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)),</span> <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">okresy</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;CZZZZZ&#39;</span><span class="p">:</span> <span class="s1">&#39;Extra-Regio&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0100&#39;</span><span class="p">:</span> <span class="s1">&#39;Praha&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ020A&#39;</span><span class="p">:</span> <span class="s1">&#39;Praha-západ&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ020B&#39;</span><span class="p">:</span> <span class="s1">&#39;Příbram&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ020C&#39;</span><span class="p">:</span> <span class="s1">&#39;Rakovník&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0201&#39;</span><span class="p">:</span> <span class="s1">&#39;Benešov&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0202&#39;</span><span class="p">:</span> <span class="s1">&#39;Beroun&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0203&#39;</span><span class="p">:</span> <span class="s1">&#39;Kladno&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0204&#39;</span><span class="p">:</span> <span class="s1">&#39;Kolín&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0205&#39;</span><span class="p">:</span> <span class="s1">&#39;Kutná Hora&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0206&#39;</span><span class="p">:</span> <span class="s1">&#39;Mělník&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0207&#39;</span><span class="p">:</span> <span class="s1">&#39;Mladá Boleslav&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0208&#39;</span><span class="p">:</span> <span class="s1">&#39;Nymburk&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0209&#39;</span><span class="p">:</span> <span class="s1">&#39;Praha-východ&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0311&#39;</span><span class="p">:</span> <span class="s1">&#39;České Budějovice&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0312&#39;</span><span class="p">:</span> <span class="s1">&#39;Český Krumlov&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0313&#39;</span><span class="p">:</span> <span class="s1">&#39;Jindřichův Hradec&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0314&#39;</span><span class="p">:</span> <span class="s1">&#39;Písek&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0315&#39;</span><span class="p">:</span> <span class="s1">&#39;Prachatice&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0316&#39;</span><span class="p">:</span> <span class="s1">&#39;Strakonice&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0317&#39;</span><span class="p">:</span> <span class="s1">&#39;Tábor&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0321&#39;</span><span class="p">:</span> <span class="s1">&#39;Domažlice&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0322&#39;</span><span class="p">:</span> <span class="s1">&#39;Klatovy&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0323&#39;</span><span class="p">:</span> <span class="s1">&#39;Plzeň-město&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0324&#39;</span><span class="p">:</span> <span class="s1">&#39;Plzeň-jih&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0325&#39;</span><span class="p">:</span> <span class="s1">&#39;Plzeň-sever&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0326&#39;</span><span class="p">:</span> <span class="s1">&#39;Rokycany&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0327&#39;</span><span class="p">:</span> <span class="s1">&#39;Tachov&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0411&#39;</span><span class="p">:</span> <span class="s1">&#39;Cheb&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0412&#39;</span><span class="p">:</span> <span class="s1">&#39;Karlovy Vary&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0413&#39;</span><span class="p">:</span> <span class="s1">&#39;Sokolov&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0421&#39;</span><span class="p">:</span> <span class="s1">&#39;Děčín&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0422&#39;</span><span class="p">:</span> <span class="s1">&#39;Chomutov&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0423&#39;</span><span class="p">:</span> <span class="s1">&#39;Litoměřice&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0424&#39;</span><span class="p">:</span> <span class="s1">&#39;Louny&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0425&#39;</span><span class="p">:</span> <span class="s1">&#39;Most&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0426&#39;</span><span class="p">:</span> <span class="s1">&#39;Teplice&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0427&#39;</span><span class="p">:</span> <span class="s1">&#39;Ústí nad Labem&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0511&#39;</span><span class="p">:</span> <span class="s1">&#39;Česká Lípa&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0512&#39;</span><span class="p">:</span> <span class="s1">&#39;Jablonec nad Nisou&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0513&#39;</span><span class="p">:</span> <span class="s1">&#39;Liberec&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0514&#39;</span><span class="p">:</span> <span class="s1">&#39;Semily&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0521&#39;</span><span class="p">:</span> <span class="s1">&#39;Hradec Králové&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0522&#39;</span><span class="p">:</span> <span class="s1">&#39;Jičín&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0523&#39;</span><span class="p">:</span> <span class="s1">&#39;Náchod&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0524&#39;</span><span class="p">:</span> <span class="s1">&#39;Rychnov nad Kněžnou&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0525&#39;</span><span class="p">:</span> <span class="s1">&#39;Trutnov&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0531&#39;</span><span class="p">:</span> <span class="s1">&#39;Chrudim&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0532&#39;</span><span class="p">:</span> <span class="s1">&#39;Pardubice&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0533&#39;</span><span class="p">:</span> <span class="s1">&#39;Svitavy&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0534&#39;</span><span class="p">:</span> <span class="s1">&#39;Ústí nad Orlicí&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0631&#39;</span><span class="p">:</span> <span class="s1">&#39;Havlíčkův Brod&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0632&#39;</span><span class="p">:</span> <span class="s1">&#39;Jihlava&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0633&#39;</span><span class="p">:</span> <span class="s1">&#39;Pelhřimov&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0634&#39;</span><span class="p">:</span> <span class="s1">&#39;Třebíč&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0635&#39;</span><span class="p">:</span> <span class="s1">&#39;Žďár nad Sázavou&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0641&#39;</span><span class="p">:</span> <span class="s1">&#39;Blansko&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0642&#39;</span><span class="p">:</span> <span class="s1">&#39;Brno-město&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0643&#39;</span><span class="p">:</span> <span class="s1">&#39;Brno-venkov&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0644&#39;</span><span class="p">:</span> <span class="s1">&#39;Břeclav&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0645&#39;</span><span class="p">:</span> <span class="s1">&#39;Hodonín&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0646&#39;</span><span class="p">:</span> <span class="s1">&#39;Vyškov&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0647&#39;</span><span class="p">:</span> <span class="s1">&#39;Znojmo&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0711&#39;</span><span class="p">:</span> <span class="s1">&#39;Jeseník&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0712&#39;</span><span class="p">:</span> <span class="s1">&#39;Olomouc&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0713&#39;</span><span class="p">:</span> <span class="s1">&#39;Prostějov&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0714&#39;</span><span class="p">:</span> <span class="s1">&#39;Přerov&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0715&#39;</span><span class="p">:</span> <span class="s1">&#39;Šumperk&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0721&#39;</span><span class="p">:</span> <span class="s1">&#39;Kroměříž&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0722&#39;</span><span class="p">:</span> <span class="s1">&#39;Uherské Hradiště&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0723&#39;</span><span class="p">:</span> <span class="s1">&#39;Vsetín&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0724&#39;</span><span class="p">:</span> <span class="s1">&#39;Zlín&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0801&#39;</span><span class="p">:</span> <span class="s1">&#39;Bruntál&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0802&#39;</span><span class="p">:</span> <span class="s1">&#39;Frýdek-Místek&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0803&#39;</span><span class="p">:</span> <span class="s1">&#39;Karviná&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0804&#39;</span><span class="p">:</span> <span class="s1">&#39;Nový Jičín&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0805&#39;</span><span class="p">:</span> <span class="s1">&#39;Opava&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;CZ0806&#39;</span><span class="p">:</span> <span class="s1">&#39;Ostrava-město&#39;</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">count_by_date_district</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">date_district_count</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;datum&#39;</span><span class="p">,</span> <span class="s1">&#39;okres_lau_kod&#39;</span><span class="p">,</span> <span class="s1">&#39;okres_nazev&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">date_district_count</span>
+
+<span class="c1"># Týdenní přírůstek v okresech po dnech&#39;</span>
+
+<span class="k">def</span> <span class="nf">week_count_by_date_district</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">date_district_count</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">date_district_count</span> <span class="o">=</span> <span class="n">date_district_count</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span>
+        <span class="p">[</span><span class="s1">&#39;datum&#39;</span><span class="p">,</span> <span class="s1">&#39;okres_lau_kod&#39;</span><span class="p">,</span> <span class="s1">&#39;okres_nazev&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="n">range_max</span> <span class="o">=</span> <span class="n">date_district_count</span><span class="p">[</span><span class="s1">&#39;datum&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+    <span class="n">range_min</span> <span class="o">=</span> <span class="n">range_max</span> <span class="o">-</span> <span class="n">dt</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+    <span class="n">date_district_count</span> <span class="o">=</span> <span class="n">date_district_count</span><span class="p">[(</span><span class="n">date_district_count</span><span class="p">[</span><span class="s1">&#39;datum&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">range_min</span><span class="p">)</span> <span class="o">&amp;</span>
+                                              <span class="p">(</span><span class="n">date_district_count</span><span class="p">[</span><span class="s1">&#39;datum&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">range_max</span><span class="p">)]</span>
+    <span class="n">date_district_count</span><span class="p">[</span><span class="s1">&#39;animate_date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">date_district_count</span><span class="p">[</span><span class="s1">&#39;datum&#39;</span><span class="p">]</span>
+    <span class="n">date_district_count</span><span class="p">[</span><span class="s1">&#39;animate_date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">date_district_count</span><span class="p">[</span><span class="s1">&#39;animate_date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">date_district_count</span>
+
+<span class="c1"># Celkový týdenní přírůstek v okresech</span>
+
+<span class="k">def</span> <span class="nf">week_total_count_by_district</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">week_total_count_district</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">range_max</span> <span class="o">=</span> <span class="n">week_total_count_district</span><span class="p">[</span><span class="s1">&#39;datum&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+    <span class="n">range_min</span> <span class="o">=</span> <span class="n">range_max</span> <span class="o">-</span> <span class="n">dt</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+    <span class="n">week_total_count_district</span> <span class="o">=</span> <span class="n">week_total_count_district</span><span class="p">[</span>
+        <span class="p">(</span><span class="n">week_total_count_district</span><span class="p">[</span><span class="s1">&#39;datum&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">range_min</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">week_total_count_district</span><span class="p">[</span><span class="s1">&#39;datum&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">range_max</span><span class="p">)]</span>
+    <span class="n">week_total_count_district</span> <span class="o">=</span> <span class="n">week_total_count_district</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span>
+        <span class="p">[</span><span class="s1">&#39;okres_lau_kod&#39;</span><span class="p">,</span> <span class="s1">&#39;okres_nazev&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">week_total_count_district</span>
+
+
+<span class="k">def</span> <span class="nf">total_count_by_district</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">total_count_district</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">total_count_district</span> <span class="o">=</span> <span class="n">total_count_district</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;okres_lau_kod&#39;</span><span class="p">,</span> <span class="s1">&#39;okres_nazev&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">total_count_district</span>
+
+<span class="k">def</span> <span class="nf">total_count_by_date</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;datum&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">total</span>
+
+
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;okres_nazev&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;okres_lau_kod&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">okresy</span><span class="p">)</span>
+<span class="n">date_district_count</span> <span class="o">=</span> <span class="n">count_by_date_district</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">week_date_district_count</span> <span class="o">=</span> <span class="n">week_count_by_date_district</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">week_total_count_district</span> <span class="o">=</span> <span class="n">week_total_count_by_district</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">total_count_district</span> <span class="o">=</span> <span class="n">total_count_by_district</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">total_count_date</span> <span class="o">=</span> <span class="n">total_count_by_date</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">republic_total_line_graph</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">total_count_date</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;datum&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;vek&#39;</span><span class="p">,</span>
+                                    <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;datum&#39;</span><span class="p">:</span> <span class="s1">&#39;Datum&#39;</span><span class="p">,</span> <span class="s1">&#39;vek&#39;</span><span class="p">:</span> <span class="s1">&#39;Počet&#39;</span><span class="p">},</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Přírůstky celá ČR&#39;</span><span class="p">,</span>
+                                    <span class="n">template</span><span class="o">=</span><span class="s1">&#39;plotly&#39;</span><span class="p">,</span> <span class="n">color_discrete_sequence</span><span class="o">=</span><span class="n">px</span><span class="o">.</span><span class="n">colors</span><span class="o">.</span><span class="n">diverging</span><span class="o">.</span><span class="n">Spectral</span><span class="p">)</span>
+
+<span class="n">republic_total_line_graph</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+        
+        
+            <div id="235727c1-eac3-4e2a-8bae-e80de1215c27" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <script type="text/javascript">
+                require(["plotly"], function(Plotly) {
+                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    
+                if (document.getElementById("235727c1-eac3-4e2a-8bae-e80de1215c27")) {
+                    Plotly.newPlot(
+                        '235727c1-eac3-4e2a-8bae-e80de1215c27',
+                        [{"hovertemplate": "Datum=%{x}<br>Po\u010det=%{y}<extra></extra>", "legendgroup": "", "line": {"color": "rgb(158,1,66)", "dash": "solid"}, "mode": "lines", "name": "", "orientation": "v", "showlegend": false, "type": "scatter", "x": ["2020-03-01T00:00:00", "2020-03-03T00:00:00", "2020-03-05T00:00:00", "2020-03-06T00:00:00", "2020-03-07T00:00:00", "2020-03-08T00:00:00", "2020-03-09T00:00:00", "2020-03-10T00:00:00", "2020-03-11T00:00:00", "2020-03-12T00:00:00", "2020-03-13T00:00:00", "2020-03-14T00:00:00", "2020-03-15T00:00:00", "2020-03-16T00:00:00", "2020-03-17T00:00:00", "2020-03-18T00:00:00", "2020-03-19T00:00:00", "2020-03-20T00:00:00", "2020-03-21T00:00:00", "2020-03-22T00:00:00", "2020-03-23T00:00:00", "2020-03-24T00:00:00", "2020-03-25T00:00:00", "2020-03-26T00:00:00", "2020-03-27T00:00:00", "2020-03-28T00:00:00", "2020-03-29T00:00:00", "2020-03-30T00:00:00", "2020-03-31T00:00:00", "2020-04-01T00:00:00", "2020-04-02T00:00:00", "2020-04-03T00:00:00", "2020-04-04T00:00:00", "2020-04-05T00:00:00", "2020-04-06T00:00:00", "2020-04-07T00:00:00", "2020-04-08T00:00:00", "2020-04-09T00:00:00", "2020-04-10T00:00:00", "2020-04-11T00:00:00", "2020-04-12T00:00:00", "2020-04-13T00:00:00", "2020-04-14T00:00:00", "2020-04-15T00:00:00", "2020-04-16T00:00:00", "2020-04-17T00:00:00", "2020-04-18T00:00:00", "2020-04-19T00:00:00", "2020-04-20T00:00:00", "2020-04-21T00:00:00", "2020-04-22T00:00:00", "2020-04-23T00:00:00", "2020-04-24T00:00:00", "2020-04-25T00:00:00", "2020-04-26T00:00:00", "2020-04-27T00:00:00", "2020-04-28T00:00:00", "2020-04-29T00:00:00", "2020-04-30T00:00:00", "2020-05-01T00:00:00", "2020-05-02T00:00:00", "2020-05-03T00:00:00", "2020-05-04T00:00:00", "2020-05-05T00:00:00", "2020-05-06T00:00:00", "2020-05-07T00:00:00", "2020-05-08T00:00:00", "2020-05-09T00:00:00", "2020-05-10T00:00:00", "2020-05-11T00:00:00", "2020-05-12T00:00:00", "2020-05-13T00:00:00", "2020-05-14T00:00:00", "2020-05-15T00:00:00", "2020-05-16T00:00:00", "2020-05-17T00:00:00", "2020-05-18T00:00:00", "2020-05-19T00:00:00", "2020-05-20T00:00:00", "2020-05-21T00:00:00", "2020-05-22T00:00:00", "2020-05-23T00:00:00", "2020-05-24T00:00:00", "2020-05-25T00:00:00", "2020-05-26T00:00:00", "2020-05-27T00:00:00", "2020-05-28T00:00:00", "2020-05-29T00:00:00", "2020-05-30T00:00:00", "2020-05-31T00:00:00", "2020-06-01T00:00:00", "2020-06-02T00:00:00", "2020-06-03T00:00:00", "2020-06-04T00:00:00", "2020-06-05T00:00:00", "2020-06-06T00:00:00", "2020-06-07T00:00:00", "2020-06-08T00:00:00", "2020-06-09T00:00:00", "2020-06-10T00:00:00", "2020-06-11T00:00:00", "2020-06-12T00:00:00", "2020-06-13T00:00:00", "2020-06-14T00:00:00", "2020-06-15T00:00:00", "2020-06-16T00:00:00", "2020-06-17T00:00:00", "2020-06-18T00:00:00", "2020-06-19T00:00:00", "2020-06-20T00:00:00", "2020-06-21T00:00:00", "2020-06-22T00:00:00", "2020-06-23T00:00:00", "2020-06-24T00:00:00", "2020-06-25T00:00:00", "2020-06-26T00:00:00", "2020-06-27T00:00:00", "2020-06-28T00:00:00", "2020-06-29T00:00:00", "2020-06-30T00:00:00", "2020-07-01T00:00:00", "2020-07-02T00:00:00", "2020-07-03T00:00:00", "2020-07-04T00:00:00", "2020-07-05T00:00:00", "2020-07-06T00:00:00", "2020-07-07T00:00:00", "2020-07-08T00:00:00", "2020-07-09T00:00:00", "2020-07-10T00:00:00", "2020-07-11T00:00:00", "2020-07-12T00:00:00", "2020-07-13T00:00:00", "2020-07-14T00:00:00", "2020-07-15T00:00:00", "2020-07-16T00:00:00", "2020-07-17T00:00:00", "2020-07-18T00:00:00", "2020-07-19T00:00:00", "2020-07-20T00:00:00", "2020-07-21T00:00:00", "2020-07-22T00:00:00", "2020-07-23T00:00:00", "2020-07-24T00:00:00", "2020-07-25T00:00:00", "2020-07-26T00:00:00"], "xaxis": "x", "y": [3, 1, 3, 11, 7, 6, 6, 25, 31, 22, 25, 47, 107, 81, 64, 109, 201, 121, 153, 114, 125, 185, 286, 258, 370, 261, 159, 184, 304, 279, 266, 329, 273, 115, 232, 189, 287, 253, 159, 169, 88, 63, 79, 158, 127, 111, 105, 92, 145, 132, 97, 53, 80, 79, 50, 41, 58, 59, 75, 52, 17, 26, 31, 71, 75, 53, 45, 18, 28, 49, 38, 44, 82, 53, 40, 19, 106, 51, 69, 31, 56, 75, 62, 45, 43, 30, 50, 51, 28, 25, 28, 55, 61, 50, 25, 37, 57, 68, 51, 68, 50, 47, 50, 31, 36, 42, 47, 107, 114, 38, 48, 57, 87, 123, 84, 148, 201, 243, 177, 127, 84, 124, 126, 117, 73, 50, 115, 105, 95, 119, 52, 55, 61, 96, 124, 134, 118, 98, 81, 151, 186, 211, 189, 179, 68, 29], "yaxis": "y"}],
+                        {"legend": {"tracegroupgap": 0}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "P\u0159\u00edr\u016fstky cel\u00e1 \u010cR"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Datum"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Po\u010det"}}},
+                        {"responsive": true}
+                    ).then(function(){
+                            
+var gd = document.getElementById('235727c1-eac3-4e2a-8bae-e80de1215c27');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })
+                };
+                });
+            </script>
+        </div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">okres_line</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">date_district_count</span><span class="p">[</span><span class="n">date_district_count</span><span class="p">[</span><span class="s1">&#39;okres_lau_kod&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;CZ0100&#39;</span><span class="p">,</span><span class="s1">&#39;CZ0722&#39;</span><span class="p">])],</span>
+                     <span class="n">x</span><span class="o">=</span><span class="s1">&#39;datum&#39;</span><span class="p">,</span>
+                     <span class="n">y</span><span class="o">=</span><span class="s1">&#39;vek&#39;</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;datum&#39;</span><span class="p">:</span> <span class="s1">&#39;Datum&#39;</span><span class="p">,</span> <span class="s1">&#39;vek&#39;</span><span class="p">:</span> <span class="s1">&#39;Počet&#39;</span><span class="p">,</span> <span class="s1">&#39;okres_nazev&#39;</span><span class="p">:</span> <span class="s1">&#39;Název okresu&#39;</span><span class="p">},</span>
+                     <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Přírůstky v okresech&#39;</span><span class="p">,</span>
+                     <span class="n">template</span><span class="o">=</span><span class="s1">&#39;plotly&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;okres_nazev&#39;</span><span class="p">,</span>
+                     <span class="n">color_discrete_sequence</span><span class="o">=</span><span class="n">px</span><span class="o">.</span><span class="n">colors</span><span class="o">.</span><span class="n">diverging</span><span class="o">.</span><span class="n">Spectral</span><span class="p">)</span>
+<span class="n">okres_line</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+        
+        
+            <div id="e06640b7-c881-4a8c-b902-d8b9d401a2ba" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <script type="text/javascript">
+                require(["plotly"], function(Plotly) {
+                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    
+                if (document.getElementById("e06640b7-c881-4a8c-b902-d8b9d401a2ba")) {
+                    Plotly.newPlot(
+                        'e06640b7-c881-4a8c-b902-d8b9d401a2ba',
+                        [{"hovertemplate": "N\u00e1zev okresu=Praha<br>Datum=%{x}<br>Po\u010det=%{y}<extra></extra>", "legendgroup": "Praha", "line": {"color": "rgb(158,1,66)", "dash": "solid"}, "mode": "lines", "name": "Praha", "orientation": "v", "showlegend": true, "type": "scatter", "x": ["2020-03-01T00:00:00", "2020-03-06T00:00:00", "2020-03-07T00:00:00", "2020-03-09T00:00:00", "2020-03-10T00:00:00", "2020-03-11T00:00:00", "2020-03-12T00:00:00", "2020-03-13T00:00:00", "2020-03-14T00:00:00", "2020-03-15T00:00:00", "2020-03-16T00:00:00", "2020-03-17T00:00:00", "2020-03-18T00:00:00", "2020-03-19T00:00:00", "2020-03-20T00:00:00", "2020-03-21T00:00:00", "2020-03-22T00:00:00", "2020-03-23T00:00:00", "2020-03-24T00:00:00", "2020-03-25T00:00:00", "2020-03-26T00:00:00", "2020-03-27T00:00:00", "2020-03-28T00:00:00", "2020-03-29T00:00:00", "2020-03-30T00:00:00", "2020-03-31T00:00:00", "2020-04-01T00:00:00", "2020-04-02T00:00:00", "2020-04-03T00:00:00", "2020-04-04T00:00:00", "2020-04-05T00:00:00", "2020-04-06T00:00:00", "2020-04-07T00:00:00", "2020-04-08T00:00:00", "2020-04-09T00:00:00", "2020-04-10T00:00:00", "2020-04-11T00:00:00", "2020-04-12T00:00:00", "2020-04-13T00:00:00", "2020-04-14T00:00:00", "2020-04-15T00:00:00", "2020-04-16T00:00:00", "2020-04-17T00:00:00", "2020-04-18T00:00:00", "2020-04-19T00:00:00", "2020-04-20T00:00:00", "2020-04-21T00:00:00", "2020-04-22T00:00:00", "2020-04-23T00:00:00", "2020-04-24T00:00:00", "2020-04-25T00:00:00", "2020-04-26T00:00:00", "2020-04-27T00:00:00", "2020-04-28T00:00:00", "2020-04-29T00:00:00", "2020-04-30T00:00:00", "2020-05-01T00:00:00", "2020-05-02T00:00:00", "2020-05-03T00:00:00", "2020-05-04T00:00:00", "2020-05-05T00:00:00", "2020-05-06T00:00:00", "2020-05-07T00:00:00", "2020-05-08T00:00:00", "2020-05-09T00:00:00", "2020-05-10T00:00:00", "2020-05-11T00:00:00", "2020-05-12T00:00:00", "2020-05-13T00:00:00", "2020-05-14T00:00:00", "2020-05-15T00:00:00", "2020-05-16T00:00:00", "2020-05-17T00:00:00", "2020-05-18T00:00:00", "2020-05-19T00:00:00", "2020-05-20T00:00:00", "2020-05-21T00:00:00", "2020-05-22T00:00:00", "2020-05-23T00:00:00", "2020-05-24T00:00:00", "2020-05-25T00:00:00", "2020-05-26T00:00:00", "2020-05-27T00:00:00", "2020-05-28T00:00:00", "2020-05-29T00:00:00", "2020-05-30T00:00:00", "2020-05-31T00:00:00", "2020-06-01T00:00:00", "2020-06-02T00:00:00", "2020-06-03T00:00:00", "2020-06-04T00:00:00", "2020-06-05T00:00:00", "2020-06-06T00:00:00", "2020-06-07T00:00:00", "2020-06-08T00:00:00", "2020-06-09T00:00:00", "2020-06-10T00:00:00", "2020-06-11T00:00:00", "2020-06-12T00:00:00", "2020-06-13T00:00:00", "2020-06-14T00:00:00", "2020-06-15T00:00:00", "2020-06-16T00:00:00", "2020-06-17T00:00:00", "2020-06-18T00:00:00", "2020-06-19T00:00:00", "2020-06-20T00:00:00", "2020-06-21T00:00:00", "2020-06-22T00:00:00", "2020-06-23T00:00:00", "2020-06-24T00:00:00", "2020-06-25T00:00:00", "2020-06-26T00:00:00", "2020-06-27T00:00:00", "2020-06-28T00:00:00", "2020-06-29T00:00:00", "2020-06-30T00:00:00", "2020-07-01T00:00:00", "2020-07-02T00:00:00", "2020-07-03T00:00:00", "2020-07-04T00:00:00", "2020-07-05T00:00:00", "2020-07-06T00:00:00", "2020-07-07T00:00:00", "2020-07-08T00:00:00", "2020-07-09T00:00:00", "2020-07-10T00:00:00", "2020-07-11T00:00:00", "2020-07-12T00:00:00", "2020-07-13T00:00:00", "2020-07-14T00:00:00", "2020-07-15T00:00:00", "2020-07-16T00:00:00", "2020-07-17T00:00:00", "2020-07-18T00:00:00", "2020-07-19T00:00:00", "2020-07-20T00:00:00", "2020-07-21T00:00:00", "2020-07-22T00:00:00", "2020-07-23T00:00:00", "2020-07-24T00:00:00", "2020-07-25T00:00:00", "2020-07-26T00:00:00"], "xaxis": "x", "y": [2, 8, 4, 4, 12, 6, 12, 7, 15, 39, 20, 20, 32, 78, 33, 60, 26, 38, 58, 81, 68, 108, 56, 32, 37, 57, 77, 82, 59, 27, 38, 35, 32, 55, 40, 34, 19, 16, 10, 11, 39, 22, 22, 28, 13, 43, 9, 14, 2, 14, 14, 1, 4, 9, 10, 22, 12, 2, 1, 7, 15, 10, 14, 14, 12, 9, 12, 6, 21, 13, 15, 15, 13, 24, 10, 15, 2, 22, 3, 4, 3, 3, 8, 12, 10, 8, 8, 11, 15, 24, 15, 5, 2, 6, 13, 6, 14, 12, 17, 18, 14, 13, 12, 12, 23, 21, 4, 9, 8, 19, 19, 15, 12, 10, 7, 3, 9, 8, 16, 11, 1, 8, 9, 5, 11, 15, 16, 7, 6, 12, 14, 14, 20, 11, 17, 21, 24, 55, 49, 40, 53, 13, 5], "yaxis": "y"}, {"hovertemplate": "N\u00e1zev okresu=Uhersk\u00e9 Hradi\u0161t\u011b<br>Datum=%{x}<br>Po\u010det=%{y}<extra></extra>", "legendgroup": "Uhersk\u00e9 Hradi\u0161t\u011b", "line": {"color": "rgb(213,62,79)", "dash": "solid"}, "mode": "lines", "name": "Uhersk\u00e9 Hradi\u0161t\u011b", "orientation": "v", "showlegend": true, "type": "scatter", "x": ["2020-03-10T00:00:00", "2020-03-11T00:00:00", "2020-03-12T00:00:00", "2020-03-13T00:00:00", "2020-03-15T00:00:00", "2020-03-18T00:00:00", "2020-03-19T00:00:00", "2020-03-21T00:00:00", "2020-03-22T00:00:00", "2020-03-23T00:00:00", "2020-03-24T00:00:00", "2020-03-25T00:00:00", "2020-03-26T00:00:00", "2020-03-27T00:00:00", "2020-03-28T00:00:00", "2020-03-29T00:00:00", "2020-03-30T00:00:00", "2020-03-31T00:00:00", "2020-04-01T00:00:00", "2020-04-02T00:00:00", "2020-04-03T00:00:00", "2020-04-04T00:00:00", "2020-04-05T00:00:00", "2020-04-07T00:00:00", "2020-04-08T00:00:00", "2020-04-09T00:00:00", "2020-04-10T00:00:00", "2020-04-11T00:00:00", "2020-04-12T00:00:00", "2020-04-15T00:00:00", "2020-04-16T00:00:00", "2020-04-17T00:00:00", "2020-04-21T00:00:00", "2020-04-22T00:00:00", "2020-04-25T00:00:00", "2020-04-26T00:00:00", "2020-05-12T00:00:00", "2020-05-13T00:00:00", "2020-07-07T00:00:00", "2020-07-09T00:00:00", "2020-07-10T00:00:00", "2020-07-12T00:00:00", "2020-07-13T00:00:00", "2020-07-14T00:00:00", "2020-07-15T00:00:00", "2020-07-16T00:00:00", "2020-07-17T00:00:00", "2020-07-18T00:00:00", "2020-07-19T00:00:00", "2020-07-21T00:00:00", "2020-07-23T00:00:00", "2020-07-24T00:00:00", "2020-07-25T00:00:00", "2020-07-26T00:00:00"], "xaxis": "x", "y": [1, 1, 1, 6, 6, 5, 2, 5, 3, 3, 5, 6, 3, 7, 7, 12, 2, 14, 5, 1, 9, 2, 1, 1, 12, 3, 1, 5, 1, 1, 2, 1, 1, 2, 2, 3, 1, 1, 3, 1, 1, 1, 1, 6, 5, 7, 4, 2, 9, 6, 3, 2, 4, 1], "yaxis": "y"}],
+                        {"legend": {"title": {"text": "N\u00e1zev okresu"}, "tracegroupgap": 0}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "P\u0159\u00edr\u016fstky v okresech"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Datum"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Po\u010det"}}},
+                        {"responsive": true}
+                    ).then(function(){
+                            
+var gd = document.getElementById('e06640b7-c881-4a8c-b902-d8b9d401a2ba');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })
+                };
+                });
+            </script>
+        </div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/covid19/2020/07/25/covid19cz.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/covid19/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/covid19/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/covid19/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Jupyter notebooks based on data from MZCR.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/covid19/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/covid19/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
