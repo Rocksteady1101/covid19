@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Covid19 Czech Republic
-description: An easy to use blogging platform with support for Jupyter Notebooks.
+description: Jupyter notebooks based on data from MZCR.
 github_username: Rocksteady1101
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "covid19"
